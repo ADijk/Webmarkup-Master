@@ -1,6 +1,7 @@
-﻿body{
+﻿body {
+    margin: 0;
     
-}
+}   
 img{
     width: 100px;
     height: 70px;
@@ -34,19 +35,52 @@ img{
 #navigatie {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0px;
     overflow: hidden;
-    background-color: #333;
+    background-color: #444444;
 }
-li{
+#navigatieLijst {
     float: left;
-
+    display: block;
+    padding: 14px 16px;
+    
 }
 li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+    color: #ffffff;
     text-decoration: none;
+
+}
+#Header1 {
+    padding: 25px;
+    text-align: center;
+    background: #2699FB;
+    color: #ffffff;
+    font-size: 25px;
+    
 }
 
+#maincontent {
+    background-color: #F5F5F5;
+    margin: 0;
+    border-right-style: groove;
+    border-left-style: groove;
+}
+#secondarycontent {
+    background-color: #ffffff;
+    margin: 0;
+    border-right-style: groove;
+    border-left-style: groove;
+    border-bottom-style: groove;
+}
+.headers {
+    background-color: #AAAA;
+    color: #000000;
+    padding: 5px 15px 5px 15px;
+    border-bottom-style: groove;
+    border-top-style: groove;
+    
+}
+.artikel {
+    padding: 0px 15px 5px 15px;
+    
+}
