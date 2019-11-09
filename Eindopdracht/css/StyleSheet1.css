@@ -1,6 +1,6 @@
 ﻿body {
     margin: 0;
-    
+    font-family: Arial;
 }   
 img{
     width: 100px;
@@ -48,7 +48,6 @@ img{
 li a {
     color: #ffffff;
     text-decoration: none;
-
 }
 #Header1 {
     padding: 25px;
@@ -64,23 +63,43 @@ li a {
     margin: 0;
     border-right-style: groove;
     border-left-style: groove;
+    border-color: #000000;
 }
 #secondarycontent {
-    background-color: #ffffff;
+    background-color: #F5F5F5;
     margin: 0;
     border-right-style: groove;
     border-left-style: groove;
     border-bottom-style: groove;
+    border-color: #000000;
 }
 .headers {
     background-color: #AAAA;
     color: #000000;
     padding: 5px 15px 5px 15px;
-    border-bottom-style: groove;
-    border-top-style: groove;
     
+    border-top-style: groove;
+    border-color: #000000;
 }
 .artikel {
     padding: 0px 15px 5px 15px;
     
+    
 }
+.footer1 {
+    background-color: #444444;
+    padding: 45px;
+}
+.grid{
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+.grid > li{
+    background: #eee;
+    padding: 1em;
+}
+.grid > li:nth-of-type(2n+1){
+    background: #ddd;
+}
+
+
