@@ -1,0 +1,58 @@
+﻿body{
+    
+}
+img{
+    width: 100px;
+    height: 70px;
+}
+#cookieHeader {
+    background-color: #444444;
+    color: #ffffff;
+}
+.cookieStatement {
+    z-index: 1;
+    background-color: #ffffff;
+    display: block;
+    top: 0px;
+    position:fixed;
+}
+.accepteer:focus ~ #cookieHeader {
+    display: none;
+}
+.weiger:focus ~ #cookieHeader {
+    display: none;
+}
+.accepteer:focus ~ .alert {
+    display: none;
+}
+.weiger:focus ~ .alert {
+    display: none;
+}
+.cookieStatement{
+    display: none;
+}
+#navigatie {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #444444;
+}
+#navigatieLijst {
+    float: left;
+    display: block;
+    padding: 14px 16px;
+    
+}
+li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+#Header1 {
+    padding: 25px;
+    text-align: center;
+    background: #2699FB;
+    color: #ffffff;
+    font-size: 25px;
+}
+
