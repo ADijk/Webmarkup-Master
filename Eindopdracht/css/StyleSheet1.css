@@ -2,14 +2,16 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif ;
 }
+.burger{
+    display: none;
+}
 #navigatie {
     list-style-type: none;
     margin: 0;
-    padding: 0px;
     overflow: hidden;
     background-color: #444444;
 }
-#navigatieLijst{
+.navigatieLijst{
     float: left;
     display: block;
     padding: 14px 16px;  
@@ -25,6 +27,7 @@ li a {
     background: #2699FB;
     color: #ffffff;
     font-size: 25pt;
+    font-family: Arial;
     
 }
 #maincontent {
@@ -66,7 +69,7 @@ li a {
 .grid li{
     list-style-type: none;
     margin: 0;
-    padding: 0px 0px 50px 0px;
+    padding-bottom: 50px;
 }
 .grid-artikel h3 {
     color: #ffffff;
@@ -133,7 +136,8 @@ li a {
     width: 350px;
     height: auto;
     float: right;
-    margin: 10px 0px 0px 10px;
+    margin-top: 10px;
+    margin-left: 10px;
     
 }
 #imgschaak {
@@ -173,6 +177,9 @@ input[type=submit] {
   border-radius: 4px;
   font-size: 13pt;
  }
+input[type=submit]:hover {
+  background-color: #f5426c;
+}
 #bericht {
   height: 200px;
 }
@@ -194,4 +201,103 @@ input[type=submit] {
     margin-right: auto;
     display: block;
     margin-bottom: 5px;
+}
+/*css voor tablet*/
+@media only screen and (max-width: 768px){
+    #Header1 {
+        width: 88%;
+    }
+    nav{
+        width: 94%;
+    }
+    #maincontent {
+        width: 94%;
+    }
+    #secondarycontent {
+        width: 94%;
+    }
+    #sportconent {
+        width: 94%;
+    }
+    .grid {
+        width: 93%;
+    }
+    .grid img{
+        width: 100%;
+        height: auto;
+    }
+    .grid h3{
+        width: 90%;
+    }
+    #referalcontent {
+        width: 94%;
+    }
+    #contactcontent {
+        width: 94%;
+    }
+    #video {
+        width: 94%;
+        height: auto;
+        margin-left: 10px;
+    }
+    #endfooter {
+        width: 94%;
+    }
+    .cookiebeleid--content {
+        width: 80%;
+        margin-left: 10px;
+    }
+
+}
+/*css for mobiel*/
+@media screen and (max-width : 500px) {
+    #Header1 {
+        width: 88%;
+    }
+    #maincontent {
+        width: 94%;
+    }
+    #secondarycontent {
+        width: 94%;
+    }
+    #sportconent {
+        width: 94%;
+    }
+    .grid {
+        width: 93%;
+    }
+    .grid img{
+        width: 100%;
+        height: auto;
+    }
+    .grid h3{
+        width: 90%;
+    }
+    #referalcontent {
+        width: 94%;
+    }
+    #contactcontent {
+        width: 94%;
+    }
+    #video {
+        width: 94%;
+        height: auto;
+        margin-left: 10px;
+    }
+    #endfooter {
+        width: 94%;
+    }
+    .cookiebeleid--content {
+        width: 80%;
+        margin-left: 10px;
+    }
+    
+    .burger li {
+        width: 25px;
+        height: 3px;
+        background-color: #444444;
+        margin: 5px;
+    }
+    
+   
 }
