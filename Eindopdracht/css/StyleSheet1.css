@@ -2,7 +2,7 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif ;
 }
-.burger{
+.header{
     display: none;
 }
 .navigatie {
@@ -261,7 +261,7 @@ input[type=submit]:hover {
         width: 100%;
     }
     .grid {
-        width: 85%;
+        width: 88%;
     }
     .grid img{
         width: 100%;
@@ -291,14 +291,14 @@ input[type=submit]:hover {
     #Header1{
         display: none;
     }
-    /*Ik heb deze burgermenu gemaakt met hulp van een tutorial van FollowAndrews*/
+    /*Ik heb de burger menu met de hulp van de tutoral van FollowAndrew*/
     .header{
+        display:block;
         background-color:#2699FB;
         box-shadow:1px 1px 4px 0 rgba(0,0,0,.1);  
         width:100%;
         z-index:3;
     }
-
     .header ul{
         margin:0;
         padding:0;
@@ -306,38 +306,32 @@ input[type=submit]:hover {
         overflow:hidden;
         background-color:#444444;
     }
-
     .header ul a{
         display:block;
         padding:20px;
         border-right:1px solid #aaa;
         text-decoration:none;
     }
-
     .header ul a:hover{
-        background-color:#ddd; 
+       background-color:#ddd; 
     }
-
     .header .logo{
         float:left;
         display:block;
         font-size:2em;
         padding:10px 20px;
     }
-
     .header .menu{
         clear:both;
         max-height:0;
         transition:max-height .2s ease-out;
     }
-
     .header .menu-icon{
         padding: 28px 20px;
         position:relative;
         float:right;
         cursor: pointer;
     }
-
     .header .menu-icon .nav-icon{
         background:#333;
         display:block;
@@ -346,7 +340,6 @@ input[type=submit]:hover {
         position:relative;
         transition:background .2s ease-out;
     }
-
     .header .menu-icon .nav-icon:before{
         background:#333;
         content:"";
@@ -358,7 +351,6 @@ input[type=submit]:hover {
         top:5px;  
 
     }
-
     .header .menu-icon .nav-icon:after{
         background:#333;
         content:"";
@@ -370,11 +362,9 @@ input[type=submit]:hover {
         top:-5px;  
 
     }
-
     .header .menu-btn{
         display:none;
     }
-
     .header .menu-btn:checked ~ .menu{
         max-height:240px;
     }
