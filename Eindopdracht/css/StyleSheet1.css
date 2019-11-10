@@ -5,7 +5,7 @@
 .burger{
     display: none;
 }
-#navigatie {
+.navigatie {
     list-style-type: none;
     margin: 0;
     overflow: hidden;
@@ -130,7 +130,7 @@ li a {
     padding: 14px;
     border: 2px solid#fff;
     background-color: #ccc;
-    cursor: pointer;
+    
 }
 #imgbazaar {
     width: 350px;
@@ -204,23 +204,20 @@ input[type=submit]:hover {
 }
 /*css voor tablet*/
 @media only screen and (max-width: 768px){
-    #Header1 {
-        width: 88%;
-    }
-    nav{
-        width: 94%;
-    }
     #maincontent {
-        width: 94%;
+        width: 100%;
     }
     #secondarycontent {
-        width: 94%;
+        width: 100%;
     }
     #sportconent {
-        width: 94%;
+        width: 100%;
+    }
+    #referalcontent{
+        width: 100%;
     }
     .grid {
-        width: 93%;
+        width: 88%;
     }
     .grid img{
         width: 100%;
@@ -230,7 +227,7 @@ input[type=submit]:hover {
         width: 90%;
     }
     #referalcontent {
-        width: 94%;
+        width: 100%;
     }
     #contactcontent {
         width: 94%;
@@ -241,7 +238,7 @@ input[type=submit]:hover {
         margin-left: 10px;
     }
     #endfooter {
-        width: 94%;
+        width: 96.4%;
     }
     .cookiebeleid--content {
         width: 80%;
@@ -250,21 +247,21 @@ input[type=submit]:hover {
 
 }
 /*css for mobiel*/
-@media screen and (max-width : 500px) {
-    #Header1 {
-        width: 88%;
-    }
+@media screen and (max-width : 500px) {    
     #maincontent {
-        width: 94%;
+        width: 100%;
     }
     #secondarycontent {
-        width: 94%;
+        width: 100%;
     }
     #sportconent {
-        width: 94%;
+        width: 100%;
+    }
+    #referalcontent{
+        width: 100%;
     }
     .grid {
-        width: 93%;
+        width: 88%;
     }
     .grid img{
         width: 100%;
@@ -274,7 +271,7 @@ input[type=submit]:hover {
         width: 90%;
     }
     #referalcontent {
-        width: 94%;
+        width: 100%;
     }
     #contactcontent {
         width: 94%;
@@ -285,19 +282,89 @@ input[type=submit]:hover {
         margin-left: 10px;
     }
     #endfooter {
-        width: 94%;
+        width: 96.4%;
     }
     .cookiebeleid--content {
         width: 80%;
         margin-left: 10px;
     }
-    
-    .burger li {
-        width: 25px;
-        height: 3px;
-        background-color: #444444;
-        margin: 5px;
+    #Header1{
+        display: none;
     }
-    
-   
+    .burger{
+        display: block;
+        background-color: #444444;
+        width: 100%;
+        z-index:3;
+    }
+   .burger ul{
+       margin: 0;
+       padding: 0;
+       list-style: none;
+       overflow: hidden;
+       background-color: #444444;
+   }
+   .burger ul a{
+       display:block;
+       padding: 20px;
+       border-right: 1px solid #AAAA;
+       text-decoration:none;
+       color: #ffffff;
+   }
+   .burger ul a:hover{
+       background-color: #AAAA;
+   }
+   .burger .logo{
+       float: left;
+       display: block;
+       font-size:2em;
+       padding: 10px 20px; 
+       color: #ffffff;
+   }
+   .burger .menu{
+       clear: both;
+       max-height: 0;
+       transition: max-height .2s ease-out;
+   }
+   .burger .menu-icon{
+       padding: 28px 20px;
+       position: relative;
+       float: right;
+       cursor: pointer;
+   }
+   .burger .menu-icon .nav-icon{
+       background: #000000;
+       display: block;
+       width: 18px;
+       height: 2px;
+       position: relative;
+       transition: background .2s ease-out;
+   }
+   .burger .menu-icon .nav-icon:before{
+       background: #000000;
+       content:"";
+       display: block;
+       height: 100%;
+       width: 100%;
+       position: absolute;
+       transition: all .2s ease-out;
+       top: 5px;
+   }
+   .burger .menu-icon .nav-icon:after{
+       background: #000000;
+       content: "";
+       display: block;
+       height: 100%;
+       width: 100%;
+       position: absolute;
+       transition: all .2s ease-out;
+       top: -5px;
+   }
+   .burger .menu-btn{
+       display:none;
+   }
+   .burger .menu-btn:checked ~ .menu{
+       max-height: 240px;
+   }
+
 }

@@ -17,28 +17,31 @@
     <header id="Header1">
         <h1>Beverwijk</h1>
         <h2>Cultuur en plezier</h2>
+        <nav class="navigatie">
+            <ul class="navigatie">
+                <li class="navigatieLijst"><a href="#maincontent">Beverwijk</a></li>
+                <li class="navigatieLijst"><a href="#secondarycontent">Winkels en activiteiten</a></li>
+                <li class="navigatieLijst"><a href="#sportcontent">Sportclubs</a></li>
+                <li class="navigatieLijst"><a href="#referalcontent">Bushido Heemskerk</a></li>
+                <li class="navigatieLijst"><a href="#contactcontent">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul id="navigatie">
-            <li class="navigatieLijst"><a href="#maincontent">Beverwijk</a></li>
-            <li class="navigatieLijst"><a href="#secondarycontent">Winkels en activiteiten</a></li>
-            <li class="navigatieLijst"><a href="#sportcontent">Sportclubs</a></li>
-            <li class="navigatieLijst"><a href="#referalcontent">Bushido Heemskerk</a></li>
-            <li class="navigatieLijst"><a href="#contactcontent">Contact</a></li>
-        </ul>      
-    </nav>
-    <nav class="burger">
-        <a href="#main-menu" class="menu-toggle">
-            <span class="fa fa-bars"></span>
-        </a>
-        <ul class="burger">
-            <li class="line1"></li>
-            <li class="line2"></li>
-            <li class="line3"></li>
-            <li class="line4"></li>
-            <li class="line5"></li>
-        </ul>
-    </nav>
+    <header class="burger">
+        <h1 class="logo">Beverwijk</h1>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>   
+        <nav>
+            <ul class="menu">
+                <li><a href="#maincontent">Beverwijk</a></li>
+                <li><a href="#secondarycontent">Winkels en activiteiten</a></li>
+                <li><a href="#sportcontent">Sportclubs</a></li>
+                <li><a href="#referalcontent">Bushido Heemskerk</a></li>
+                <li><a href="#contactcontent">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
+    </header>   
     <section id="maincontent">
         <header class="headers">
             <h2>Beverwijk</h2>
@@ -81,7 +84,7 @@
             </p>
         </article>
         <article class="artikel">
-            <img id="imgslot" title="SlotAssumburg" src="img/SlotAssumburg.png" alt="Een foto van Slot Assumburg"/>
+            <img id="imgslot" title="SlotAssumburg" src="img/SlotAssumburg.png" alt="Een foto van Slot Assumburg" />
             <h3>Heemskerk</h3>
             <p>
                 Heemskerk is een verrassende gemeente met een uitgebalanceerde combinatie van natuur en cultuur. In de Heemskerkse duin kom je tot rust tussen al de flora en fauna die er te vinden is.
@@ -103,7 +106,7 @@
         <header class="headers">
             <h2>Sportclubs</h2>
         </header>
-        <article >
+        <article>
             <ul class="grid">
                 <li class="grid-artikel">
                     <h3>Cardio fitness Beverwijk</h3>
