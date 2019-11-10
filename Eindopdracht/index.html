@@ -27,18 +27,19 @@
             <h2>Beverwijk</h2>
         </header>
         <article class="artikel">
-            <p>
+            <img id="imgbazaar" src="img/bazaarbeverwijk.png" alt="bazaar beverwijk, mensen zitten te eten en wnkelen" />
+            <p class="tekstrechts">
                 Beverwijk is vooral bekend om zijn Bazaar die de grootste overdekte markt van Europa is. In de Bazaar vind je een groot aanbod aan koopwaar, van exotisch eten tot kleding en schoonheidsproducten.
                 De Bazaar is al tientallen jaren een begrip, ze heeft genoeg aan mond op mond reclame, maar ook de Bazaar gaat met haar tijd mee en maakt veel gebruik van social media.
                 Dit gebeurt onder meer via een eigen facebook pagina, waarop wekelijks ondernemers worden geïntroduceerd en acties en nieuwtjes gedeeld worden.
                 De Beverwijkse Bazaar zit naast de woonboulevard, samen staan zij garant voor een heerlijk dagje shoppen. De woonboulevard in Beverwijk is de eerste en bekendste van Nederland.
             </p>
-            <img src="img/bazaarbeverwijk.png" alt="bazaar" />
-            <p>
+            <img id="imgschaak" src="img/schaaktoernooiBeverwijk.png" alt="oude foto van een schaaktoernooi" />
+            <p class="tekstlinks">
                 Elk jaar in juli vindt er ook een Young Art Festival plaats, een jongeren festival met muziek, theater en kunst. Ook is Beverwijk bekend om de Koninklijke Hoogovens, tegenwoordig TataSteel.
                 En laten we niet vergeten het schaaktoernooi dat onder de vlag van de staalgigant plaats vindt. Het is één van de grootste en belangrijkste schaaktoernooien van de wereld.
             </p>
-            <img src="img/schaaktoernooiBeverwijk.png" alt="schaaktoernooi" />
+
         </article>
         <footer class="footer1"></footer>
     </section>
@@ -47,6 +48,7 @@
             <h2>Winkels en activiteiten</h2>
         </header>
         <article class="artikel">
+            <img id="imgkerk" src="img/Sint-Agathakerk.png" alt="Sint-Agathakerk" />
             <h3>Beverwijk</h3>
             <p>
                 Je kan altijd de Bazaar bezoeken zonder enige idee waar wat is, maar als u een specifiek product zoekt is het misschien handig om te weten waar normaal deze producten verkocht worden sinds het Bazaar zo groot is.
@@ -60,16 +62,15 @@
                 De Sint-Agathakerk is geplaatst in Beverwijk en is een prachtige rooms-katholieke kerk dat sinds 1942 met de bouw is voltooid. Er word ook een kerststal geplaats op zondag 8 december,
                 deze kerststal is ruim 22 x 5 meter. Elk jaar word dit gebouwd en ook is er elk jaar een andere thema.
             </p>
-            <img src="img/Sint-Agathakerk.png" alt="Sint-Agathakerk" />
         </article>
         <article class="artikel">
+            <img id="imgslot" src="img/SlotAssumburg.png" />
             <h3>Heemskerk</h3>
             <p>
                 Heemskerk is een verrassende gemeente met een uitgebalanceerde combinatie van natuur en cultuur. In de Heemskerkse duin kom je tot rust tussen al de flora en fauna die er te vinden is.
                 Historiek en cultuur zijn terug te vinden in de kasteeltjes. Heemskerk heeft diverse kastelen: kasteel oud Haerlem, slot Assumburg, maar de bekendste is toch wel kasteel Marquette.
                 Deze laatste is ook vooral populair bij aanstaande bruidsparen.
             </p>
-            <img src="img/SlotAssumburg.png" />
             <p>
                 Eén van de populairste toeristische attractie in Heemskerk is Slot Assumburg, het kasteel is uit het 13e-eeuw. Als u altijd al een keertje in een kasteel zou willen overnachten kan dat ook,
                 je kan <a href=" https://www.stayokay.com/nl/hostel/heemskerk">hier</a> een overnachting boeken. Ook kunt u de Dorpskerk van Heemskerk bezoeken, de kerk heeft prachtige glas-in-loodramen en was gebouwd in 1063.
@@ -93,7 +94,7 @@
                         Cardio fitness Beverwijk is 7 dagen per week en 24 uur per dag geopend. Ze bieden
                         lessen aan zoals: Fat-attack, Bokzaktraining, Kickboksen en nog meer.
                     </p>
-                    <a href="https://www.cardiofitnessbeverwijk.nl/"><img src="img/cardiofitness.png" alt="cardiofitness" /></a>
+                    <a href="https://www.cardiofitnessbeverwijk.nl/"><img id=""  src="img/cardiofitness.png" alt="cardiofitness" /></a>
                 </li>
                 <li class="grid-artikel">
                     <h3>R.K.V.V. DEM</h3>
@@ -198,12 +199,15 @@
         </fieldset>
     </form>
 
-    <section class="cookieStatement">
-         <span class="accepteer" tabindex="0">Accepteren</span>
-         <span class="weiger" tabindex="0">Door gaan zonder cookies</span>
-         <header id="cookieHeader"><h1>Cookie instellingen</h1></header>
-         <p class="alert">Deze website maakt gebruik van cookies om de website te verbeteren. Als u gebruik wilt maken van alle functionaliteiten op deze website, klik dan op Accepteren.</p>
-     </section> 
+    <section class="cookiebeleid">
+        <input id="cookiebeleid" type="checkbox" class="cookiebeleid--toggle" checked="checked">
+        <article class="cookiebeleid--container">
+            <div class="cookiebeleid--content">
+                <p>Bij het bezoeken van deze website gaat u akkoord met ons cookiebeleid.</p>
+                <label class="cookiebeleid--toggle--text" for="cookiebeleid">Accepteer</label>
+            </div>
+        </article>
+    </section>
     <footer id="endfooter"><h4>&copy; Ashley Dijkshoorn</h4></footer>
 </body>
 </html>
